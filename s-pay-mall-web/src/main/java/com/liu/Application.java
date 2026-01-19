@@ -1,4 +1,4 @@
-package cn.liu;
+package com.liu;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.boot.SpringApplication;
