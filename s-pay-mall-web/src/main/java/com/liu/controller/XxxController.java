@@ -1,4 +1,4 @@
-package com.liu.Controller;
+package com.liu.controller;
 
 public class XxxController {
 }
