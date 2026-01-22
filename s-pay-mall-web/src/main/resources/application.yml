@@ -1,6 +1,6 @@
 spring:
   config:
-    name: s-pay-mall-mvc
+    name: s-pay-new
   profiles:
     active: prod
 
