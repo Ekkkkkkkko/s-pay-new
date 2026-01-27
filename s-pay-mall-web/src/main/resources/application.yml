@@ -2,5 +2,5 @@ spring:
   config:
     name: s-pay-new
   profiles:
-    active: prod
+    active: dev
 

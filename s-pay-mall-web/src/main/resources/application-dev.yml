@@ -10,34 +10,34 @@ server:
 # 微信公众号对接
 weixin:
   config:
-    originalid: gh_e067c267e056
+    originalid: gh_dfc60ef70ad8
     token: b8b6
     app-id: wx64d5cdb0215c301a
     app-secret: d4bd79a7ab3e19d0f0337cc9650e86f6
     template_id: RbEZ2jo47dQmF4A7_Ku7RsDy1x_5by6bk1Ox6rPCl4Y
 
-spring:
-  datasource:
-    username: root
-    password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/s-pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
-    maxWait: 60000
-    timeBetweenEvictionRunsMillis: 60000
-    validationQuery: SELECT 1
-    testWhileIdle: true
-    testOnBorrow: false
-    testOnReturn: false
-    poolPreparedStatements: true
-    maxPoolPreparedStatementPerConnectionSize: 20
-    filters: stat
+#spring:
+#  datasource:
+#    username: root
+#    password: 123456
+#    url: jdbc:mysql://127.0.0.1:3306/s-pay-mall?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&useSSL=true
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    initialSize: 5
+#    minIdle: 5
+#    maxActive: 20
+#    maxWait: 60000
+#    timeBetweenEvictionRunsMillis: 60000
+#    validationQuery: SELECT 1
+#    testWhileIdle: true
+#    testOnBorrow: false
+#    testOnReturn: false
+#    poolPreparedStatements: true
+#    maxPoolPreparedStatementPerConnectionSize: 20
+#    filters: stat
 
-mybatis:
-  mapper-locations: classpath:/mybatis/mapper/*.xml
-  config-location:  classpath:/mybatis/config/mybatis-config.xml
+#mybatis:
+#  mapper-locations: classpath:/mybatis/mapper/*.xml
+#  config-location:  classpath:/mybatis/config/mybatis-config.xml
 
 # 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
 alipay:
