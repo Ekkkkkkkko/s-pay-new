@@ -1,4 +1,4 @@
-package com.liu.common;
+package com.liu.common.weixin;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 

@@ -1,8 +1,8 @@
 package com.liu.controller;
 
-import com.liu.common.MessageTextEntity;
-import com.liu.common.SignatureUtil;
-import com.liu.common.XmlUtil;
+import com.liu.common.weixin.MessageTextEntity;
+import com.liu.common.weixin.SignatureUtil;
+import com.liu.common.weixin.XmlUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Value;

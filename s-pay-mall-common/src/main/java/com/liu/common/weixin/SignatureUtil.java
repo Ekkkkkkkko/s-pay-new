@@ -1,4 +1,4 @@
-package com.liu.common;
+package com.liu.common.weixin;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -1,4 +1,4 @@
-package com.liu.common;
+package com.liu.common.weixin;
 
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.core.util.QuickWriter;

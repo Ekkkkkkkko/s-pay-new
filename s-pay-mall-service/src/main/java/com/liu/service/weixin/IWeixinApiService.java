@@ -12,12 +12,12 @@ import retrofit2.http.Query;
 
 public interface IWeixinApiService {
     @GET("cgi-bin/token")
-    Call<WeixinTokenRes> GetToken(@Query("grant_type") String grantType,
+    Call<WeixinTokenRes> getToken(@Query("grant_type") String grantType,
                                   @Query("appid") String appId,
                                   @Query("secret") String appSecret);
 
     @POST("cgi-bin/qrcode/create")
-    Call<WeixinQrCodeRes> CreateQrCode(@Query("access_token") String accessToken, @Body WeixinQrCodeReq weixinQrCodeReq);
+    Call<WeixinQrCodeRes> createQrCode(@Query("access_token") String accessToken, @Body WeixinQrCodeReq weixinQrCodeReq);
 
     @POST("cgi-bin/qrcode/create")
     Call<Void> sendMessage(@Query("access_token") String accessToken, @Body WeixinTemplateMessageVO weixinTemplateMessageVO);
