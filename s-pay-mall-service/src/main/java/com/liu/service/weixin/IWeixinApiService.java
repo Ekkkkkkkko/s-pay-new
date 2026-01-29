@@ -19,7 +19,7 @@ public interface IWeixinApiService {
     @POST("cgi-bin/qrcode/create")
     Call<WeixinQrCodeRes> createQrCode(@Query("access_token") String accessToken, @Body WeixinQrCodeReq weixinQrCodeReq);
 
-    @POST("cgi-bin/qrcode/create")
+    @POST("cgi-bin/message/template/send")
     Call<Void> sendMessage(@Query("access_token") String accessToken, @Body WeixinTemplateMessageVO weixinTemplateMessageVO);
 
 }

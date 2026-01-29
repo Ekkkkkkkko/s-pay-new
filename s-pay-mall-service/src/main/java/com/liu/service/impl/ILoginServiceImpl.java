@@ -20,7 +20,7 @@ import java.util.Map;
 public class ILoginServiceImpl implements ILoginService {
     @Value("${weixin.config.app-id}")
     private String appid;
-    @Value("${weixin.config.app-secret")
+    @Value("${weixin.config.app-secret}")
     private String appsecret;
     @Value("${weixin.config.template_id}")
     private String template_id;
