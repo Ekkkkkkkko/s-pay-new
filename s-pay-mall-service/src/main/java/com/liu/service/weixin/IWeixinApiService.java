@@ -1,6 +1,6 @@
 package com.liu.service.weixin;
 
-import com.liu.domain.po.WeixinTemplateMessageVO;
+import com.liu.domain.vo.WeixinTemplateMessageVO;
 import com.liu.domain.req.WeixinQrCodeReq;
 import com.liu.domain.res.WeixinQrCodeRes;
 import com.liu.domain.res.WeixinTokenRes;

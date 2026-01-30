@@ -1,4 +1,4 @@
-package com.liu.domain.po;
+package com.liu.domain.vo;
 
 import java.util.HashMap;
 import java.util.Map;

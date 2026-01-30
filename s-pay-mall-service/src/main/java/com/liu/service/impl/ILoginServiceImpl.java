@@ -1,7 +1,7 @@
 package com.liu.service.impl;
 
 import com.google.common.cache.Cache;
-import com.liu.domain.po.WeixinTemplateMessageVO;
+import com.liu.domain.vo.WeixinTemplateMessageVO;
 import com.liu.domain.req.WeixinQrCodeReq;
 import com.liu.domain.res.WeixinQrCodeRes;
 import com.liu.domain.res.WeixinTokenRes;
