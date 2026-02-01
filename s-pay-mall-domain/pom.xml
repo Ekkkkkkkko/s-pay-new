@@ -18,12 +18,6 @@
         </dependency>
         <dependency>
             <groupId>com.liu</groupId>
-            <artifactId>s-pay-new</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.liu</groupId>
             <artifactId>s-pay-mall-common</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>

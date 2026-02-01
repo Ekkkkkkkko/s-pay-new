@@ -1,6 +1,6 @@
 package com.liu.job;
 
-import cn.bugstack.service.IOrderService;
+import com.liu.service.IOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package com.liu.job;
 
-import cn.bugstack.service.IOrderService;
+import com.liu.service.IOrderService;
 import com.alipay.api.AlipayClient;
 import com.alipay.api.domain.AlipayTradeQueryModel;
 import com.alipay.api.request.AlipayTradeQueryRequest;
@@ -13,9 +13,9 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author Ekko
  * @description 检测未接收到或未正确处理的支付回调通知
- * @create 2024-09-30 09:59
+ * @create
  */
 @Slf4j
 @Component()
@@ -29,7 +29,7 @@ public class NoPayNotifyOrderJob {
     @Scheduled(cron = "0/3 * * * * ?")
     public void exec() {
         try {
-            log.info("任务；检测未接收到或未正确处理的支付回调通知");
+            log.info("任务:检测未接收到或未正确处理的支付回调通知");
             List<String> orderIds = orderService.queryNoPayNotifyOrder();
             if (null == orderIds || orderIds.isEmpty()) return;
 

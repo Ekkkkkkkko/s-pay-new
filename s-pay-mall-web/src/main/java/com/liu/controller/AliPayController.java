@@ -5,13 +5,12 @@ import com.alipay.api.internal.util.AlipaySignature;
 import com.liu.common.constants.Constants;
 import com.liu.common.response.Response;
 import com.liu.controller.DTO.CreatePayRequestDTO;
+import com.liu.domain.req.ShopCartReq;
 import com.liu.domain.res.PayOrderRes;
 import com.liu.service.IOrderService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -24,12 +23,15 @@ import java.util.Map;
  * @create 2026/1/31 10:03
  */
 @Slf4j
+@RestController()
+@CrossOrigin("*")
+@RequestMapping("/api/v1/alipay/")
 public class AliPayController {
-    @Value("${alipay.lipay_public_key}")
+    @Value("${alipay.alipay_public_key}")
     private String alipayPublicKey;
     @Resource
     private IOrderService orderService;
-
+    @RequestMapping(value = "create_pay_order", method =  RequestMethod.POST)
     public Response<String> createPayOrder(@RequestBody CreatePayRequestDTO createPayRequestDTO){
         try{
             log.info("商品下单，根据商品ID创建支付单开始 userid:{} productId:{}",createPayRequestDTO.getUserId(),createPayRequestDTO.getUserId());
@@ -55,9 +57,7 @@ public class AliPayController {
         }
     }
 
-    /**
-     * http://xfg-studio.natapp1.cc/api/v1/alipay/alipay_notify_url
-     */
+
     @RequestMapping(value = "alipay_notify_url", method = RequestMethod.POST)
     public String payNotify(HttpServletRequest request) throws AlipayApiException {
         log.info("支付回调，消息接收 {}", request.getParameter("trade_status"));
