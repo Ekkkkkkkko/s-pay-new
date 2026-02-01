@@ -4,8 +4,8 @@ version: '3.8'
 # 你需要修改system为你自身系统的仓库名
 services:
   s-pay-mall:
-    image: system/s-pay-mall-mvc:1.0
-    container_name: s-pay-mall
+    image: system/s-pay-new:1.0
+    container_name: s-pay-new
     restart: on-failure
     ports:
       - "8091:8091"
