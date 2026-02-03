@@ -29,10 +29,12 @@ import java.util.List;
 @Service
 public class OrderServiceImpl implements IOrderService {
 
-    @Value("${alipay.notify_url}")
-    private String notifyUrl;
+
     @Value("${alipay.return_url}")
     private String returnUrl;
+
+    @Value("${alipay.notify_url}")
+    private String notifyUrl;
 
     @Resource
     private IOrderDao orderDao;
